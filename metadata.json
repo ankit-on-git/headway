@@ -1,0 +1,6 @@
+{
+  "name": "Headway Oxford Online Practice",
+  "description": "Headway 5th Edition Oxford Online Practice student learning and activity platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
