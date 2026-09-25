@@ -14,7 +14,7 @@ export const INITIAL_UNITS: Unit[] = [
     title: 'Home and away',
     activitiesDone: 20,
     totalActivities: 20,
-    score: 88,
+    score: 94,
     stars: 3,
     activities: [
       {
@@ -23,7 +23,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 3,
-        score: 88,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -58,7 +58,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 96,
         status: 'done',
         questions: [
           {
@@ -85,7 +85,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -104,7 +104,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 100,
+        score: 98,
         status: 'done',
         questions: [
           {
@@ -129,7 +129,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 100,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -154,7 +154,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 100,
+        score: 95,
         status: 'done',
         questions: [
           {
@@ -172,7 +172,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -190,7 +190,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: null,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -208,7 +208,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 96,
         status: 'done',
         questions: [
           {
@@ -226,7 +226,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -244,7 +244,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 1,
-        score: 100,
+        score: 95,
         status: 'done',
         questions: [
           {
@@ -262,7 +262,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 2,
-        score: 100,
+        score: 96,
         status: 'done',
         questions: [
           {
@@ -280,7 +280,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 3,
-        score: 100,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -298,7 +298,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 2,
-        score: 100,
+        score: 95,
         status: 'done',
         questions: [
           {
@@ -316,8 +316,8 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Speaking',
         section: 'practice',
         tries: 0,
-        score: null,
-        status: 'submitted',
+        score: 92,
+        status: 'done',
         questions: [
           {
             id: 'q1',
@@ -352,8 +352,8 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Writing',
         section: 'practice',
         tries: 0,
-        score: null,
-        status: 'submitted',
+        score: 90,
+        status: 'done',
         questions: [
           {
             id: 'q1',
@@ -370,7 +370,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 100,
+        score: 98,
         status: 'done',
         questions: [
           {
@@ -394,7 +394,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 100,
+        score: 95,
         status: 'done',
         questions: [
           {
@@ -412,7 +412,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 100,
+        score: 98,
         status: 'done',
         questions: [
           {
@@ -432,7 +432,7 @@ export const INITIAL_UNITS: Unit[] = [
     title: 'The ends of the earth',
     activitiesDone: 20,
     totalActivities: 20,
-    score: 85,
+    score: 92,
     stars: 3,
     activities: [
       {
@@ -441,7 +441,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 2,
-        score: 88,
+        score: 87,
         status: 'done',
         questions: [
           {
@@ -477,7 +477,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 95,
         status: 'done',
         questions: [
           {
@@ -495,7 +495,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 90,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -513,7 +513,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 95,
+        score: 96,
         status: 'done',
         questions: [
           {
@@ -531,7 +531,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -549,7 +549,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: 85,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -585,7 +585,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 98,
         status: 'done',
         questions: [
           {
@@ -603,7 +603,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -621,7 +621,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -639,7 +639,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 2,
-        score: 100,
+        score: 95,
         status: 'done',
         questions: [
           {
@@ -657,7 +657,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 1,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -675,7 +675,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 2,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -693,7 +693,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 3,
-        score: 85,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -711,7 +711,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 2,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -729,7 +729,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Speaking',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -765,7 +765,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Writing',
         section: 'practice',
         tries: 1,
-        score: 85,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -783,7 +783,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 96,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -803,7 +803,7 @@ export const INITIAL_UNITS: Unit[] = [
     title: 'The kindness of strangers',
     activitiesDone: 20,
     totalActivities: 20,
-    score: 82,
+    score: 90,
     stars: 3,
     activities: [
       {
@@ -812,7 +812,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 85,
         status: 'done',
         questions: [
           {
@@ -830,7 +830,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 2,
-        score: 85,
+        score: 87,
         status: 'done',
         questions: [
           {
@@ -848,7 +848,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -866,7 +866,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 90,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -884,7 +884,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -902,7 +902,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -920,7 +920,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: 90,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -938,7 +938,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -956,7 +956,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -974,7 +974,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 1,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -992,7 +992,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1010,7 +1010,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1028,7 +1028,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 2,
-        score: 85,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -1046,7 +1046,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1064,7 +1064,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 2,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1082,7 +1082,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Speaking',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 92,
         status: 'done',
         questions: [
           {
@@ -1100,7 +1100,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Writing',
         section: 'practice',
         tries: 1,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1118,7 +1118,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Writing',
         section: 'practice',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1136,7 +1136,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 85,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -1154,7 +1154,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 82,
+        score: 94,
         status: 'done',
         questions: [
           {
@@ -1174,7 +1174,7 @@ export const INITIAL_UNITS: Unit[] = [
     title: 'A pack of lies',
     activitiesDone: 20,
     totalActivities: 20,
-    score: 81,
+    score: 88,
     stars: 3,
     activities: [
       {
@@ -1183,7 +1183,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 2,
-        score: 85,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1201,7 +1201,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1219,7 +1219,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Grammar Tutor',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 85,
         status: 'done',
         questions: [
           {
@@ -1237,7 +1237,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1255,7 +1255,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1273,7 +1273,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Vocabulary',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 85,
         status: 'done',
         questions: [
           {
@@ -1291,7 +1291,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1309,7 +1309,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1327,7 +1327,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Everyday English',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 85,
         status: 'done',
         questions: [
           {
@@ -1345,7 +1345,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 1,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1363,7 +1363,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Video',
         section: 'look_again',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1381,7 +1381,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1399,7 +1399,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Reading',
         section: 'practice',
         tries: 2,
-        score: 85,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1417,7 +1417,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 85,
         status: 'done',
         questions: [
           {
@@ -1435,7 +1435,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Listening',
         section: 'practice',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1453,7 +1453,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Speaking',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 85,
         status: 'done',
         questions: [
           {
@@ -1471,7 +1471,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Writing',
         section: 'practice',
         tries: 1,
-        score: 80,
+        score: 90,
         status: 'done',
         questions: [
           {
@@ -1489,7 +1489,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Writing',
         section: 'practice',
         tries: 2,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1507,7 +1507,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 80,
+        score: 88,
         status: 'done',
         questions: [
           {
@@ -1525,7 +1525,7 @@ export const INITIAL_UNITS: Unit[] = [
         category: 'Check your progress',
         section: 'check_your_progress',
         tries: 1,
-        score: 81,
+        score: 91,
         status: 'done',
         questions: [
           {

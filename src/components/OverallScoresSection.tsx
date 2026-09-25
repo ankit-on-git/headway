@@ -30,7 +30,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     }
   });
 
-  const avgScore = totalScoredUnits > 0 ? Math.round(totalScoredSum / totalScoredUnits) : 84;
+  const avgScore = totalScoredUnits > 0 ? Math.round(totalScoredSum / totalScoredUnits) : 91;
   const totalCourseActivities = 242; // Standard Oxford Headway 5e Upper Intermediate total
 
   // Official Oxford Headway Upper Intermediate category distribution across all 12 units
@@ -38,7 +38,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Grammar Tutor',
       bgColor: '#0f75bc',
-      score: 85,
+      score: 92,
       activitiesDone: 12,
       totalActivities: 36,
       hasStar: true,
@@ -46,7 +46,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Vocabulary',
       bgColor: '#00873d',
-      score: 87,
+      score: 93,
       activitiesDone: 12,
       totalActivities: 38,
       hasStar: true,
@@ -54,7 +54,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Everyday English',
       bgColor: '#af7518',
-      score: 83,
+      score: 90,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -62,7 +62,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Video',
       bgColor: '#5c5d5f',
-      score: 84,
+      score: 91,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -70,7 +70,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Listening',
       bgColor: '#973b8c',
-      score: 82,
+      score: 89,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -78,7 +78,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Reading',
       bgColor: '#d63333',
-      score: 88,
+      score: 94,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -86,7 +86,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Writing',
       bgColor: '#3c7d62',
-      score: 81,
+      score: 89,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -94,7 +94,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Speaking',
       bgColor: '#885e71',
-      score: 82,
+      score: 90,
       activitiesDone: 4,
       totalActivities: 12,
       hasStar: true,
@@ -102,7 +102,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Check your progress',
       bgColor: '#008299',
-      score: 84,
+      score: 91,
       activitiesDone: 12,
       totalActivities: 36,
       hasStar: true,
