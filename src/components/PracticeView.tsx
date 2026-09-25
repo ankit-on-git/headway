@@ -194,7 +194,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
 
                   {/* Stars - Only rendered when unit has stars (matching the photo where 0% units have no stars) */}
                   <div className="w-12 flex justify-center">
-                    {unit.stars > 0 && <StarRating stars={unit.stars} />}
+                    {unit.stars > 0 && <StarRating stars={unit.stars} score={unit.score} />}
                   </div>
                 </div>
               </div>

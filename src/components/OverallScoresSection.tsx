@@ -30,23 +30,23 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     }
   });
 
-  const avgScore = totalScoredUnits > 0 ? Math.round(totalScoredSum / totalScoredUnits) : 91;
+  const avgScore = 29; // Overall compilation score as requested (29% instead of 28%)
   const totalCourseActivities = 242; // Standard Oxford Headway 5e Upper Intermediate total
 
-  // Official Oxford Headway Upper Intermediate category distribution across all 12 units
+  // Official Oxford Headway Upper Intermediate category distribution matching screenshot
   const categoryCards: CategoryScoreCard[] = [
     {
       name: 'Grammar Tutor',
       bgColor: '#0f75bc',
-      score: 92,
+      score: 26,
       activitiesDone: 12,
       totalActivities: 36,
-      hasStar: true,
+      hasStar: false,
     },
     {
       name: 'Vocabulary',
       bgColor: '#00873d',
-      score: 93,
+      score: 37,
       activitiesDone: 12,
       totalActivities: 38,
       hasStar: true,
@@ -54,15 +54,15 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Everyday English',
       bgColor: '#af7518',
-      score: 90,
+      score: 22,
       activitiesDone: 8,
       totalActivities: 24,
-      hasStar: true,
+      hasStar: false,
     },
     {
       name: 'Video',
       bgColor: '#5c5d5f',
-      score: 91,
+      score: 34,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -70,7 +70,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Listening',
       bgColor: '#973b8c',
-      score: 89,
+      score: 31,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -78,7 +78,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Reading',
       bgColor: '#d63333',
-      score: 94,
+      score: 30,
       activitiesDone: 8,
       totalActivities: 24,
       hasStar: true,
@@ -86,23 +86,23 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Writing',
       bgColor: '#3c7d62',
-      score: 89,
+      score: 23,
       activitiesDone: 8,
       totalActivities: 24,
-      hasStar: true,
+      hasStar: false,
     },
     {
       name: 'Speaking',
       bgColor: '#885e71',
-      score: 90,
+      score: 0,
       activitiesDone: 4,
       totalActivities: 12,
-      hasStar: true,
+      hasStar: false,
     },
     {
       name: 'Check your progress',
       bgColor: '#008299',
-      score: 91,
+      score: 30,
       activitiesDone: 12,
       totalActivities: 36,
       hasStar: true,
@@ -177,7 +177,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
                 Time on activities
               </span>
               <span className="text-[26px] font-bold text-[#222222] tracking-tight mt-0.5 leading-none">
-                4hrs 15
+                4hrs 22mins
               </span>
             </div>
           </div>
@@ -210,15 +210,17 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
 
               {card.hasStar && (
                 <div className="shrink-0 -mt-0.5">
-                  {/* Gold star with crisp white outline matching screenshot */}
-                  <svg className="w-6 h-6 drop-shadow-xs" viewBox="0 0 24 24">
-                    <path
-                      fill="#f2b024"
-                      stroke="#ffffff"
-                      strokeWidth="1.5"
-                      strokeLinejoin="round"
-                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                    />
+                  {/* Outlined star icon matching screenshot */}
+                  <svg
+                    className="w-5 h-5 text-white/95 drop-shadow-2xs"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
                 </div>
               )}
