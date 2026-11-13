@@ -13,99 +13,102 @@ interface CategoryScoreCard {
   score: number;
   activitiesDone: number;
   totalActivities: number;
-  hasStar: boolean;
+  stars: 0 | 1 | 3;
+  starVariant?: 'gold' | 'silver';
 }
 
 export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ units }) => {
   // Aggregate real-time data from units
   let totalDoneCount = 0;
-  let totalScoredSum = 0;
-  let totalScoredUnits = 0;
 
   units.forEach((u) => {
     totalDoneCount += u.activitiesDone;
-    if (u.activitiesDone > 0 && u.score > 0) {
-      totalScoredSum += u.score;
-      totalScoredUnits += 1;
-    }
   });
 
-  const avgScore = 29; // Overall compilation score as requested (29% instead of 28%)
+  const avgScore = 70; // Overall compilation score matching the updated screenshot
   const totalCourseActivities = 242; // Standard Oxford Headway 5e Upper Intermediate total
 
-  // Official Oxford Headway Upper Intermediate category distribution matching screenshot
+  // Official Oxford Headway Upper Intermediate category distribution matching updated screenshot
   const categoryCards: CategoryScoreCard[] = [
     {
       name: 'Grammar Tutor',
       bgColor: '#0f75bc',
-      score: 26,
-      activitiesDone: 12,
+      score: 74,
+      activitiesDone: 30,
       totalActivities: 36,
-      hasStar: false,
+      stars: 3,
+      starVariant: 'silver',
     },
     {
       name: 'Vocabulary',
       bgColor: '#00873d',
-      score: 37,
-      activitiesDone: 12,
+      score: 82,
+      activitiesDone: 31,
       totalActivities: 38,
-      hasStar: true,
+      stars: 3,
+      starVariant: 'gold',
     },
     {
       name: 'Everyday English',
       bgColor: '#af7518',
-      score: 22,
-      activitiesDone: 8,
+      score: 80,
+      activitiesDone: 19,
       totalActivities: 24,
-      hasStar: false,
+      stars: 3,
+      starVariant: 'gold',
     },
     {
       name: 'Video',
       bgColor: '#5c5d5f',
-      score: 34,
-      activitiesDone: 8,
+      score: 82,
+      activitiesDone: 20,
       totalActivities: 24,
-      hasStar: true,
+      stars: 3,
+      starVariant: 'gold',
     },
     {
       name: 'Listening',
       bgColor: '#973b8c',
-      score: 31,
-      activitiesDone: 8,
+      score: 81,
+      activitiesDone: 20,
       totalActivities: 24,
-      hasStar: true,
+      stars: 3,
+      starVariant: 'gold',
     },
     {
       name: 'Reading',
       bgColor: '#d63333',
-      score: 30,
-      activitiesDone: 8,
+      score: 83,
+      activitiesDone: 20,
       totalActivities: 24,
-      hasStar: true,
+      stars: 3,
+      starVariant: 'gold',
     },
     {
       name: 'Writing',
       bgColor: '#3c7d62',
-      score: 23,
-      activitiesDone: 8,
+      score: 42,
+      activitiesDone: 20,
       totalActivities: 24,
-      hasStar: false,
+      stars: 1,
+      starVariant: 'gold',
     },
     {
       name: 'Speaking',
       bgColor: '#885e71',
       score: 0,
-      activitiesDone: 4,
+      activitiesDone: 6,
       totalActivities: 12,
-      hasStar: false,
+      stars: 0,
     },
     {
       name: 'Check your progress',
       bgColor: '#008299',
-      score: 30,
-      activitiesDone: 12,
+      score: 80,
+      activitiesDone: 30,
       totalActivities: 36,
-      hasStar: true,
+      stars: 3,
+      starVariant: 'gold',
     },
   ];
 
@@ -177,7 +180,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
                 Time on activities
               </span>
               <span className="text-[26px] font-bold text-[#222222] tracking-tight mt-0.5 leading-none">
-                4hrs 22mins
+                7hrs 35mins
               </span>
             </div>
           </div>
@@ -208,20 +211,9 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
                 </div>
               </div>
 
-              {card.hasStar && (
+              {(card.stars === 1 || card.stars === 3) && (
                 <div className="shrink-0 -mt-0.5">
-                  {/* Outlined star icon matching screenshot */}
-                  <svg
-                    className="w-5 h-5 text-white/95 drop-shadow-2xs"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
+                  <CategoryStarBadge stars={card.stars} variant={card.starVariant || 'gold'} />
                 </div>
               )}
             </div>
@@ -345,3 +337,62 @@ const CardWhiteDonut: React.FC<CardWhiteDonutProps> = ({
     </svg>
   );
 };
+
+interface CategoryStarBadgeProps {
+  stars: 1 | 3;
+  variant: 'gold' | 'silver';
+}
+
+const CategoryStarBadge: React.FC<CategoryStarBadgeProps> = ({ stars, variant }) => {
+  const sideFill = variant === 'gold' ? '#e3a52c' : '#b8bec7';
+  const centerFill = variant === 'gold' ? '#f8c546' : '#d5dae0';
+  const singleFill = variant === 'gold' ? '#9e7023' : '#b8bec7';
+  const strokeColor = 'rgba(255, 255, 255, 0.9)';
+
+  if (stars === 1) {
+    return (
+      <svg className="w-6 h-6 drop-shadow-2xs" viewBox="0 0 24 24">
+        <polygon
+          points="12 2.5 14.9 8.4 21.4 9.3 16.7 13.9 17.8 20.4 12 17.3 6.2 20.4 7.3 13.9 2.6 9.3 9.1 8.4 12 2.5"
+          fill={singleFill}
+          stroke={strokeColor}
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  return (
+    <div className="flex items-center -space-x-2.5 pt-0.5">
+      <svg className="w-5 h-5 drop-shadow-2xs" viewBox="0 0 24 24">
+        <polygon
+          points="12 2.5 14.9 8.4 21.4 9.3 16.7 13.9 17.8 20.4 12 17.3 6.2 20.4 7.3 13.9 2.6 9.3 9.1 8.4 12 2.5"
+          fill={sideFill}
+          stroke={strokeColor}
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+      </svg>
+      <svg className="w-6 h-6 -translate-y-1 z-10 drop-shadow-xs" viewBox="0 0 24 24">
+        <polygon
+          points="12 2.5 14.9 8.4 21.4 9.3 16.7 13.9 17.8 20.4 12 17.3 6.2 20.4 7.3 13.9 2.6 9.3 9.1 8.4 12 2.5"
+          fill={centerFill}
+          stroke={strokeColor}
+          strokeWidth="1.4"
+          strokeLinejoin="round"
+        />
+      </svg>
+      <svg className="w-5 h-5 drop-shadow-2xs" viewBox="0 0 24 24">
+        <polygon
+          points="12 2.5 14.9 8.4 21.4 9.3 16.7 13.9 17.8 20.4 12 17.3 6.2 20.4 7.3 13.9 2.6 9.3 9.1 8.4 12 2.5"
+          fill={sideFill}
+          stroke={strokeColor}
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </div>
+  );
+};
+
