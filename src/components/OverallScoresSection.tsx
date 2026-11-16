@@ -18,14 +18,10 @@ interface CategoryScoreCard {
 }
 
 export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ units }) => {
-  // Aggregate real-time data from units
-  let totalDoneCount = 0;
+  const unitsDoneCount = units.reduce((sum, u) => sum + u.activitiesDone, 0);
+  const totalDoneCount = 219 + (unitsDoneCount - 201);
 
-  units.forEach((u) => {
-    totalDoneCount += u.activitiesDone;
-  });
-
-  const avgScore = 70; // Overall compilation score matching the updated screenshot
+  const avgScore = 77; // Overall compilation score matching the updated screenshot
   const totalCourseActivities = 242; // Standard Oxford Headway 5e Upper Intermediate total
 
   // Official Oxford Headway Upper Intermediate category distribution matching updated screenshot
@@ -33,17 +29,17 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Grammar Tutor',
       bgColor: '#0f75bc',
-      score: 74,
-      activitiesDone: 30,
+      score: 82,
+      activitiesDone: 34,
       totalActivities: 36,
       stars: 3,
-      starVariant: 'silver',
+      starVariant: 'gold',
     },
     {
       name: 'Vocabulary',
       bgColor: '#00873d',
-      score: 82,
-      activitiesDone: 31,
+      score: 90,
+      activitiesDone: 34,
       totalActivities: 38,
       stars: 3,
       starVariant: 'gold',
@@ -51,8 +47,8 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Everyday English',
       bgColor: '#af7518',
-      score: 80,
-      activitiesDone: 20,
+      score: 85,
+      activitiesDone: 21,
       totalActivities: 24,
       stars: 3,
       starVariant: 'gold',
@@ -60,8 +56,8 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Video',
       bgColor: '#5c5d5f',
-      score: 82,
-      activitiesDone: 20,
+      score: 92,
+      activitiesDone: 22,
       totalActivities: 24,
       stars: 3,
       starVariant: 'gold',
@@ -69,8 +65,8 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Listening',
       bgColor: '#973b8c',
-      score: 81,
-      activitiesDone: 20,
+      score: 84,
+      activitiesDone: 21,
       totalActivities: 24,
       stars: 3,
       starVariant: 'gold',
@@ -78,8 +74,8 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Reading',
       bgColor: '#d63333',
-      score: 83,
-      activitiesDone: 20,
+      score: 89,
+      activitiesDone: 22,
       totalActivities: 24,
       stars: 3,
       starVariant: 'gold',
@@ -87,8 +83,8 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Writing',
       bgColor: '#3c7d62',
-      score: 42,
-      activitiesDone: 20,
+      score: 48,
+      activitiesDone: 22,
       totalActivities: 24,
       stars: 1,
       starVariant: 'gold',
@@ -104,8 +100,8 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
     {
       name: 'Check your progress',
       bgColor: '#008299',
-      score: 80,
-      activitiesDone: 30,
+      score: 92,
+      activitiesDone: 33,
       totalActivities: 36,
       stars: 3,
       starVariant: 'gold',
@@ -180,7 +176,7 @@ export const OverallScoresSection: React.FC<OverallScoresSectionProps> = ({ unit
                 Time on activities
               </span>
               <span className="text-[26px] font-bold text-[#222222] tracking-tight mt-0.5 leading-none">
-                7hrs 35mins
+                12<span className="font-normal">hrs</span> 52
               </span>
             </div>
           </div>
@@ -313,21 +309,21 @@ const CardWhiteDonut: React.FC<CardWhiteDonutProps> = ({
 
   return (
     <svg width={size} height={size} className="shrink-0 transform -rotate-90">
-      {/* Dark Translucent Track */}
+      {/* White Remaining Track */}
       <circle
         cx={size / 2}
         cy={size / 2}
         r={radius}
-        stroke="rgba(0, 0, 0, 0.28)"
+        stroke="rgba(255, 255, 255, 0.9)"
         strokeWidth={strokeWidth}
         fill="transparent"
       />
-      {/* Pure White Completed Progress Arc */}
+      {/* Dark Completed Progress Arc */}
       <circle
         cx={size / 2}
         cy={size / 2}
         r={radius}
-        stroke="#ffffff"
+        stroke="#111111"
         strokeWidth={strokeWidth}
         fill="transparent"
         strokeDasharray={circumference}
